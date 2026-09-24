@@ -1,0 +1,289 @@
+/* база не трогать сюда цвета потом запихнуть */
+
+html{
+    font-size: 1em;
+    font-family: "Arimo", sans-serif;
+    color: black;
+    /* flex-wrap: wrap */
+}
+
+/* *{
+    margin:0;
+	padding:0;
+} */
+
+
+
+/* шапка */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    font-style:oblique;
+    min-height: 100px;
+    padding: 10px 30px; 
+    border-bottom: 2px solid gray;
+    /* justify-content: space-between; */
+}
+
+.logo_osnov{
+    display: flex;
+    align-items: center;
+    
+}
+
+h1{
+    font-family: "Roboto" , sans-serif;
+    font-style:oblique;
+    text-align:center;
+    font-size: 2em;
+    margin: 20px;
+}
+
+ul{ 
+    /* padding-left: 60px; */
+    text-decoration: none;
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+    /* margin: 20px 20px; */
+}
+
+a{
+    font-size: 1.4em;
+    text-decoration: none;
+    align-items: center;
+    padding: 10px 10px;
+    
+}
+ 
+/* бади основное (весь мусор) */
+body{
+    font-family: "Roboto" , sans-serif;
+    font-size: 1em;
+    color: black;
+}
+
+h2{
+    font-style:oblique;
+    font-size: 1.8em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+p{
+    font: style 1.5em;
+    line-height: 2em;
+    margin-bottom: 1.3em;
+    text-align: justify;
+    font-weight: 200;
+}
+
+.fototo{
+    display: flex;
+    margin: 0 auto 10px;
+    justify-content: center; 
+    align-items: center;   
+    margin-top: 50px;  
+}
+
+.fototo-text{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+
+.about-in{
+    display: flex;
+    justify-content: center; 
+    gap: 20px;            
+    flex-wrap: nowrap;      
+}
+
+.Histori{
+    text-align:left ;
+    max-width: 300px;
+    min-height: 400px;
+    background-color:cornsilk;
+
+    padding: 30px;
+    margin: 20px;
+}
+
+
+.inglih{
+    text-align:left ;
+    max-width: 300px;
+    min-height: 400px;
+    background-color:cornsilk;
+    padding: 30px;
+    margin: 20px;
+}
+
+.introductory{
+    text-align:left ;
+    max-width: 300px;
+    min-height: 400px;
+    background-color:cornsilk;
+
+    padding: 30px;
+    margin: 20px;
+}
+
+.faek {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    max-width: 725px;
+    min-height: 400px;
+    background-color: cornsilk;
+    
+    padding: 30px;
+    margin: 20px auto;  
+}
+
+
+
+.Citata{
+    text-align:left ;
+    max-width: 610px;
+    min-height: 150px;
+    background-color:cornsilk;
+
+    padding: 30px;
+    margin: 20px;
+    
+    
+}
+
+
+
+.citata-in{
+    text-align: right
+}
+
+
+
+q{
+    font-size: 2em;
+}
+
+
+
+b{
+    text-align:right;
+    font-size: 1.2em;
+    padding: 10px 10px;
+}
+
+h3{
+    font-size: 1.4em;
+    color: black;
+    font-style:oblique;
+
+}
+
+
+
+ol{
+    /* display: flex; */
+    /* list-style: none; */
+    gap: 20px;
+    align-items: center;
+}
+
+
+
+.articles li:nth-child(even){
+    background-color: aquamarine; 
+}
+
+.END::after{
+    content: "\F6C0";
+    font-family: boostap-icon;
+    color: aquamarine;
+}
+/* все на днооооо */
+
+
+footer{
+    display: flex;
+    flex-direction: column;    /* Выстраивает <h3> друг под другом */
+    align-items: center;       /* Центрирует по горизонтали */
+    justify-content: center;   /* Центрирует по вертикали */
+    
+    border-top: 2px solid gray;
+    padding: 1.3em;
+    min-height: 100px;
+
+    /* align-items :center;
+    display: flex;
+    border-top: 2px solid gray;
+    padding: 1.3em;
+    min-height: 100px; */
+}
+
+h4{
+    font-size: 1em;
+}
+
+
+a:hover, a:focus{
+    color: brown;
+}
+
+.articles li:nth-child(4) a::after{
+    content: "«Важно!». ";
+}
+
+
+p::first-line {
+    letter-spacing: 0.15em; 
+    font-weight: 500;       
+  }
+  
+p:lang(en) {
+    font-style: italic;        
+    font-family: Georgia, serif; 
+  }
+  
+  p:lang(ru) {
+    font-weight: normal;
+  }
+  
+.main-content {
+    background-color: #f4f7f6; 
+    padding: 20px;            
+    margin-bottom: 30px;      
+}
+
+.main-content h2 {
+    color: #0077b6;       
+    margin-top: 0;             
+  }
+  
+  
+.main-content p {
+    color: #4a5568;         
+    line-height: 1.6;      
+  }
+  
+
+
+
+#END img{
+    border: 4px solid  #4a5568;
+}
+
+.bi-bi-send {
+    border: 4px solid  #4a5568; 
+}
+
+
+img + p{
+    margin-top: 200px;
+}
