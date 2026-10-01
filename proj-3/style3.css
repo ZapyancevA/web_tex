@@ -1,0 +1,27 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.contaner{
+    position: relative;
+    width: 800px;
+    height: 800px;
+    border: 5px solid darkblue;
+    background: gray;
+    margin: 100px auto;
+
+
+}
+
+.block{
+    width: 200px;
+    height: 200px;
+    border: 5px solid red;
+    background: white ;
+
+}
+
+
+

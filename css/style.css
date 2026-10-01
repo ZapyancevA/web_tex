@@ -168,6 +168,7 @@ p{
 
 
 
+
 q{
     font-size: 2em;
 }
@@ -199,13 +200,13 @@ ol{
 
 
 .articles li:nth-child(even){
-    background-color: aquamarine; 
+    background-color: grey; 
 }
 
 .END::after{
     content: "\F6C0";
     font-family: boostap-icon;
-    color: aquamarine;
+    color: grey;
 }
 /* все на днооооо */
 
@@ -287,3 +288,61 @@ p:lang(en) {
 img + p{
     margin-top: 200px;
 }
+
+
+.feedback{
+    margin: 90px 0;
+}
+
+
+
+
+table.project-table {
+    width: 100%;
+    border-collapse: collapse; 
+    margin: 20px 0;
+}
+
+table.project-table th, 
+table.project-table td {
+    padding: 12px;
+    text-align: left;
+}
+
+
+table.project-table tbody tr:nth-child(even) {
+    background-color: rgb(204, 204, 204);
+}
+
+
+table.project-table td:first-child, 
+table.project-table th:first-child {
+    font-weight: bold;
+    color: black;
+    background-color: rgb(173, 173, 173);
+}
+
+table.project-table tbody tr:last-child {
+    background-color: #666666;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+
+
+.contact-form input[type = "text"]{
+    height: 20px;
+    width: 250px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: white solid 1px;
+    background-color: #4a5568;
+}
+
+
+
+
+
+
+
+
