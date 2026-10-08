@@ -1,35 +1,136 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
 }
 
-.contaner{
-    position: relative;
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+    /* flex-wrap: wrap; */
+    align-content: space-between;
+    /* gap: 30px 60px; */
     width: 800px;
     height: 800px;
     border: 5px solid darkblue;
-    background: gray;
-    padding: 30px;
+    background: lightcoral;
     margin: 100px auto;
+}
+.block {
 
-
+    width: 150px;
+    height: 150px;
+    border: 5px solid darkgreen;
+    background: rebeccapurple;
 }
 
-.block{
-    width: 200px;
-    height: 200px;
-    border: 5px solid red;
-    background: white ;
-    padding: 20px;
-    margin-top: 20px;
+.block:first-child{
+    font-size: 52px;
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+.block:last-child{
+    flex-shrink: 3;
+    flex-grow: 3;
+    order: -1;    
+}
+/*----------верстка макета-----------*/
+
+.wrapper {
+    max-width: 1240px;
+    background-color:blanchedalmond;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
 }
 
-.block:nth-child(2){
-    position: absolute;
-    top: 100px;
-    left: 100px;
-    z-index: index 1;
+body {
+    height: 100vh;
+}
+
+header {
+    background-color:azure;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-menu {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+.main-menu li {
+    flex-shrink: 0;
+}
+
+aside {
+    background-color:azure;
+    width: 150px;
+}
+.content{
+    background-color:bisque;
+    flex-grow: 1;
+}
+
+.catalog {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.card {
+    max-width: 240px;
+}
+.card img {
+    width: 100%;
 }
 
 
+footer{
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+@media (max-widht:1240px){
+    .card{
+        width: 22%;
+    }
+}
+
+@media (max-widht:870px){
+    .card{
+        width: 31%;
+    }
+}
+
+@media (max-widht:650px){
+    .card{
+        width: 45%;
+    }
+}
+
+@media (max-widht:870px){
+    .card{
+        width: 31%;
+    }
+}
